@@ -1,3 +1,12 @@
+.bdep/
+
+# Local default options files.
+#
+.build2/local/
+
+# Compiler/linker output.
+*.pc
+
 # Compiled Object files
 *.slo
 *.lo

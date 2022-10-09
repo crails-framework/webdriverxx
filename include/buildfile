@@ -1,0 +1,20 @@
+import intf_libs += libcurl%lib{curl}
+
+lib{webdriverxx}: {hxx ixx txx}{**} $intf_libs
+
+# Export options.
+#
+out_pfx = [dir_path] $out_root/include/
+src_pfx = [dir_path] $src_root/include/
+
+lib{webdriverxx}:
+{
+  cxx.export.poptions = "-I$out_pfx" "-I$src_pfx"
+  cxx.export.libs = $intf_libs
+}
+
+{hxx ixx txx}{*}:
+{
+  install         = include/
+  install.subdirs = true
+}

@@ -1,0 +1,11 @@
+: 1
+name: webdriverxx
+version: 1.0.0
+summary: A C++ client library for Selenium Webdriver
+license: MIT
+description-file: README.md
+url: https://github.com/crails-framework/webdriverxx
+email: michael@unetresgrossebite.com
+depends: * build2 >= 0.15.0
+depends: * bpkg >= 0.15.0
+depends: libcurl ^7.76.0
